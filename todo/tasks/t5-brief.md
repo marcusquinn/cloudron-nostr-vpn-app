@@ -21,7 +21,7 @@ A live off-LAN test is the only proof that the self-hosted node replaces the iri
 1. Create a fine-grained PAT limited to this repository with only `Contents: Read and write`; save it as the repository secret `CLOUDRON_RELEASE_PAT` (see `docs/PUBLISHING.md`).
 2. Merge the t4 PR and confirm the catalog workflow published the image, `CloudronVersions.json`, tag and GitHub release.
 3. Install: `cloudron install --versions-url <PUBLIC_VERSIONS_URL> --location nvpn-test`; note the node npub from the logs or docs location.
-4. Qualify with the MacBook and Mac mini: back up each `~/Library/Application Support/nvpn/config.toml`, replace `[fips_bootstrap_peers]` with only this node (per `docs/CLIENT-CONFIG.md`), disable Nostr discovery, put one Mac on a different network (e.g. phone hotspot), and confirm `ssh mini.nvpn` still works. Restore the configs afterwards unless keeping the new node as the default.
+4. Qualify with the MacBook and Mac mini: back up each `~/Library/Application Support/nvpn/config.toml`, replace `[fips_bootstrap_peers]` with only this node (per `docs/CLIENT-CONFIG.md`), disable Nostr discovery, put one Mac on a different network (e.g. phone hotspot), block any remaining direct client path, record route or session evidence that this node carries the traffic, and confirm `ssh mini.nvpn` still works. Restore the configs afterwards unless keeping the new node as the default.
 5. Check restart, update and backup/restore keep the same npub.
 6. Sign in at [Cloudron Community Apps](https://ca.cloudron.io), add the versions URL, and verify the imported listing.
 7. In local `~/.config/aidevops/repos.json`, set `cloudron_package.monitor_upstream` and `monitor_compatibility` to `true` for this repo (disabled until a manifest exists).
@@ -29,7 +29,7 @@ A live off-LAN test is the only proof that the self-hosted node replaces the iri
 
 ## Acceptance Criteria
 
-- [ ] Two real nvpn clients on different networks connect using only this node as bootstrap peer.
+- [ ] Two real nvpn clients on different networks connect using only this node as bootstrap peer, with recorded route or session evidence that traffic transits this node.
 - [ ] Node identity survives restart, update and backup/restore.
 - [ ] The app appears in Cloudron Community Apps with correct metadata.
 - [ ] Client configs are restored or intentionally switched, with backups kept.
