@@ -68,6 +68,9 @@ Format: `- [ ] tNNN Description @owner #tag ~estimate risk:level logged:date`
 
 ## Backlog
 
+- [ ] t4 Package Nostr VPN FIPS transit node as a Cloudron app through Community Apps submission #feature #cloudron #interactive #auto-dispatch ~7h tier:thinking ref:GH#1 logged:2026-09-27 -> [todo/tasks/t4-brief.md]
+- [ ] t5 Qualify Nostr VPN transit package on Cloudron and submit to Community Apps #ops #cloudron #interactive ~1.5h blocked-by:t4 ref:GH#2 logged:2026-09-27 -> [todo/tasks/t5-brief.md]
+
 <!--TOON:backlog[0]{id,desc,owner,tags,est,risk,logged,status}:
 -->
 
