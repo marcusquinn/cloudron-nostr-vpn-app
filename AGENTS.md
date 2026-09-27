@@ -4,17 +4,27 @@
 
 ## Quick Reference
 
-- **Build**: `# TODO: add build command`
-- **Test**: `# TODO: add test command`
-- **Deploy**: `# TODO: add deploy command`
+- **Validate**: `cloudron-package-helper.sh validate`
+- **Build**: `cloudron-package-helper.sh build`
+- **Test install**: `cloudron-package-helper.sh install nvpn-test`
+- **Release checks**: `cloudron-package-helper.sh check-compatibility` and
+  `cloudron-package-helper.sh preflight-release vX.Y.Z`
 
 ## Project Overview
 
-<!-- Brief description of what this project does and why it exists. -->
+Cloudron app package that runs [Nostr VPN](https://github.com/mmalmi/nostr-vpn)
+(`nvpn`) as a self-hosted FIPS transit and bootstrap peer. Nostr VPN nodes can
+list it in `[fips_bootstrap_peers]` instead of the default third-party
+`fips1.iris.to`/`fips2.iris.to` peers, so off-LAN mesh connections stay on
+infrastructure you control.
 
 ## Architecture
 
-<!-- Key architectural decisions, tech stack, directory structure. -->
+Mirror the structure of `marcusquinn/cloudron-netbird-app`: `Dockerfile` pinned to
+the Cloudron base image, `start.sh`, `CloudronManifest.json`, `docs/` for
+operator guides, and the Cloudron release and catalog-publish workflows. The
+upstream Umbrel package (`umbrel/` in `mmalmi/nostr-vpn`) is the reference for
+the daemon build and its host-networking and TUN requirements.
 
 ## Conventions
 
