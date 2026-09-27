@@ -24,7 +24,8 @@ A live off-LAN test is the only proof that the self-hosted node replaces the iri
 4. Qualify with the MacBook and Mac mini: back up each `~/Library/Application Support/nvpn/config.toml`, replace `[fips_bootstrap_peers]` with only this node (per `docs/CLIENT-CONFIG.md`), disable Nostr discovery, put one Mac on a different network (e.g. phone hotspot), and confirm `ssh mini.nvpn` still works. Restore the configs afterwards unless keeping the new node as the default.
 5. Check restart, update and backup/restore keep the same npub.
 6. Sign in at [Cloudron Community Apps](https://ca.cloudron.io), add the versions URL, and verify the imported listing.
-7. Record evidence in the issue; then file aidevops follow-ups to (a) let `nostr-vpn-setup-lib.sh` set custom bootstrap peers and (b) document the node in `.agents/services/networking/nostr-vpn.md` and `.agents/reference/mesh-remote-workers.md`.
+7. In local `~/.config/aidevops/repos.json`, set `cloudron_package.monitor_upstream` and `monitor_compatibility` to `true` for this repo (disabled until a manifest exists).
+8. Record evidence in the issue; then file aidevops follow-ups to (a) let `nostr-vpn-setup-lib.sh` set custom bootstrap peers and (b) document the node in `.agents/services/networking/nostr-vpn.md` and `.agents/reference/mesh-remote-workers.md`.
 
 ## Acceptance Criteria
 
