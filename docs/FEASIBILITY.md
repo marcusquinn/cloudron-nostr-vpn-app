@@ -53,6 +53,21 @@ ls -l /dev/net/tun` returned `No such file or directory`. This is a local
 Docker observation, **not** a Cloudron runtime test. The remaining device
 mount and Cloudron acceptability questions are unresolved.
 
+With **both** `--cap-add NET_ADMIN --device /dev/net/tun` and `iproute2` /
+`iptables` installed in the temporary Rust builder container, the same daemon
+command instead stayed up until `timeout 12` ended it, logging:
+
+```text
+fips: Linux vnet TUN enabled on utun100; udp_gso=true
+fips: Linux tunnel txqueuelen set on utun100; txqueuelen=4096
+daemon: FIPS private mesh on utun100 (seeded 0 recently-connected peer endpoint(s))
+```
+
+This proves a privileged standalone Docker startup, **not** transit between
+clients or compatibility with Cloudron. The builder image lacks `ip` and
+`iptables` by default; its first privileged attempt failed while configuring
+the interface for that separate missing-runtime-dependency reason.
+
 The tested binary's `nvpn --help` also hides the internal `daemon` command;
 `nvpn daemon --help` confirms it remains callable. The actual client-facing
 command is `nvpn start`. This difference matters when adapting the Umbrel
