@@ -2,19 +2,12 @@
 
 <!-- aidevops:badges:start -->
 <!-- managed by aidevops badges; edit the template, not this block -->
-<!-- Build & Quality Status -->
-[![GitHub Actions](https://github.com/marcusquinn/cloudron-nostr-vpn-app/actions/workflows/loc-badge.yml/badge.svg?branch=main)](https://github.com/marcusquinn/cloudron-nostr-vpn-app/actions/workflows/loc-badge.yml)
+[![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/marcusquinn/cloudron-nostr-vpn-app/blob/main/LICENSE)
 
-<!-- License & Legal -->
-[![License](https://img.shields.io/badge/license-see%20file-yellow.svg)](https://github.com/marcusquinn/cloudron-nostr-vpn-app/blob/main/LICENSE)
-
-<!-- Repository Metrics -->
 [![Lines of code](docs/metrics/badges/loc.svg)](docs/metrics/repo-metrics.md)
-[![Languages by lines of code](docs/metrics/badges/languages.svg)](docs/metrics/repo-metrics.md)
 [![Dependencies](docs/metrics/badges/dependencies.svg)](docs/metrics/repo-metrics.md)
 
-<!-- Project Links -->
-[![GitHub repository](https://img.shields.io/badge/github-repository-181717.svg?logo=github)](https://github.com/marcusquinn/cloudron-nostr-vpn-app)
+[![Languages by lines of code](docs/metrics/badges/languages.svg)](docs/metrics/repo-metrics.md)
 <!-- aidevops:badges:end -->
 Nostr VPN FIPS transit and bootstrap node - Cloudron app package
 
