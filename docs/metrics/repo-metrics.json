@@ -1,7 +1,7 @@
 {
   "schema": "aidevops.repo-metrics.v1",
   "schema_version": 1,
-  "generated_at": "2026-10-20T00:57:00Z",
+  "generated_at": "2026-10-26T10:13:03Z",
   "tool": {
     "name": "aidevops repo-metrics",
     "version": "1.0.0"
@@ -12,7 +12,7 @@
   },
   "summary": {
     "source_files": 13,
-    "code": 883,
+    "code": 900,
     "comments": 32,
     "blanks": 312,
     "languages": 3,
@@ -25,7 +25,7 @@
       "code": 835,
       "comments": 0,
       "blanks": 305,
-      "percentage": 94.56,
+      "percentage": 92.78,
       "color": "#083fa1"
     },
     {
@@ -34,16 +34,16 @@
       "code": 37,
       "comments": 32,
       "blanks": 7,
-      "percentage": 4.19,
+      "percentage": 4.11,
       "color": "#cb171e"
     },
     {
       "name": "SVG",
       "files": 1,
-      "code": 11,
+      "code": 28,
       "comments": 0,
       "blanks": 0,
-      "percentage": 1.25,
+      "percentage": 3.11,
       "color": "#6e7781"
     }
   ],
