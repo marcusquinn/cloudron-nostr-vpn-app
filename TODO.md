@@ -109,3 +109,5 @@ Format: `- [ ] tNNN Description @owner #tag ~estimate risk:level logged:date`
 <!--TOON:summary{total,ready,pending,in_progress,in_review,done,declined,total_est,total_actual}:
 0,0,0,0,0,0,0,,
 -->
+
+- [ ] t6 feat: run the nvpn FIPS bootstrap node as a host service on a Cloudron server ref:GH#9
