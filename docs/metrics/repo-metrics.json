@@ -1,7 +1,7 @@
 {
   "schema": "aidevops.repo-metrics.v1",
   "schema_version": 1,
-  "generated_at": "2026-11-01T21:38:49Z",
+  "generated_at": "2026-11-07T18:42:41Z",
   "tool": {
     "name": "aidevops repo-metrics",
     "version": "1.0.0"
@@ -11,10 +11,10 @@
     "slug": "marcusquinn/cloudron-nostr-vpn-app"
   },
   "summary": {
-    "source_files": 13,
-    "code": 901,
-    "comments": 32,
-    "blanks": 313,
+    "source_files": 14,
+    "code": 915,
+    "comments": 45,
+    "blanks": 317,
     "languages": 3,
     "dependencies": 0
   },
@@ -25,16 +25,16 @@
       "code": 836,
       "comments": 0,
       "blanks": 306,
-      "percentage": 92.79,
+      "percentage": 91.37,
       "color": "#083fa1"
     },
     {
       "name": "YAML",
-      "files": 2,
-      "code": 37,
-      "comments": 32,
-      "blanks": 7,
-      "percentage": 4.11,
+      "files": 3,
+      "code": 51,
+      "comments": 45,
+      "blanks": 11,
+      "percentage": 5.57,
       "color": "#cb171e"
     },
     {
@@ -43,7 +43,7 @@
       "code": 28,
       "comments": 0,
       "blanks": 0,
-      "percentage": 3.11,
+      "percentage": 3.06,
       "color": "#6e7781"
     }
   ],
